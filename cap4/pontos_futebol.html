@@ -1,0 +1,39 @@
+<script>
+function pulaLinha(){ 					//inicio da funcao pulaLinha; esta funcao pula a linha
+	document.write("<br><hr>");
+	}									//final da funcao pulaLinha
+
+function mostra(frase){					//inicio da funcao mostra; esta funcao apresenta a frase com a tag big e pula a linha
+	document.write("<big>"+frase+"</big>");
+	pulaLinha();						//final da funcao mostra
+	}
+
+	
+function calculaPontos(vitorias, empates){
+	return (vitorias*3)+ empates;
+}
+
+	 
+var vitorias = parseInt(prompt("quantas vitorias o time teve? "));
+var empates = parseInt(prompt("quantos empates o time tem?"));
+var pontos = (calculaPontos(vitorias, empates));
+
+//var pontos = (vitorias*3)+empates;
+/*
+var vitoriasAdversario = parseInt(prompt("Quantas vitorias o adversario teve?"));
+var empatesAdversario = parseInt(prompt("Quantos empates o adversario teve?"));
+var pontosAdversario = (vitoriasAdversario*3) + empatesAdversario;
+mostra(pontosAdversario);
+*/
+
+if(pontos>28){
+mostra("Nosso time esta indo melhor que o Livros Velhos!");
+}
+if(pontos==28){
+mostra("nosso time esta empatado com o Livros Velhos");
+}
+if(pontos<28){
+mostra("Nosso time esta pior que o Livros Velhos");
+}
+
+</script>

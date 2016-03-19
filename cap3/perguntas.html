@@ -1,0 +1,22 @@
+<script>
+
+function pulaLinha(){ 					//inicio da funcao pulaLinha; esta funcao pula a linha
+	document.write("<br><hr>");
+	}									//final da funcao pulaLinha
+
+function mostra(frase){					//inicio da funcao mostra; esta funcao apresenta a frase com a tag big e pula a linha
+	document.write("<big>"+frase+"</big>");
+	pulaLinha();						//final da funcao mostra
+	}
+
+function calculaIMC(altura, peso){
+	var imc = peso / (altura^2);
+	return imc;
+	}
+	
+var nome = prompt("bom dia! qual eh o seu nome? :");
+mostra("Bem vindo! " + nome);
+
+var idade = prompt(nome + ", quantos anos voce tem?");
+mostra(nome + " tem " + idade + " anos.");
+</script>

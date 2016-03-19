@@ -1,0 +1,29 @@
+<script>
+
+function pulaLinha(){ 					//inicio da funcao pulaLinha; esta funcao pula a linha
+	document.write("<br><hr>");
+	}									//final da funcao pulaLinha
+
+function mostra(frase){					//inicio da funcao mostra; esta funcao apresenta a frase com a tag big e pula a linha
+	document.write("<big>"+frase+"</big>");
+	pulaLinha();						//final da funcao mostra
+	}
+
+function primeira(){
+	console.log("1-antes");
+	segunda();
+	console.log("1-depois");
+}
+
+function segunda(){
+	console.log("2-antes");
+	terceira();
+	console.log("2-depois");
+}
+
+function terceira(){
+	console.log("3");
+	}
+	
+primeira();
+</script>

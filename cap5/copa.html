@@ -1,0 +1,33 @@
+<script>
+
+function mostra(frase){
+	
+	document.write(frase + "<br><hr><br>");
+}
+
+var anoDeCopa = 1930;
+//mostra(anoDeCopa + " tem copa!");
+
+
+function copa(anoDeVerificacao){
+	while(anoDeCopa<anoDeVerificacao){
+		//mostra(anoDeCopa + "Tem Copa!");
+		anoDeCopa = anoDeCopa +4;
+		if (anoDeCopa==anoDeVerificacao){
+			mostra(anoDeVerificacao + " tem copa!");
+		}
+		//else {
+		//	mostra(anoDeVerificacao + " nao tem copa!");
+		//}	
+			
+	}
+	if (anoDeCopa != anoDeVerificacao){
+		mostra(anoDeVerificacao + " nao tem copa!");
+	}
+}
+	
+var anoDeVerificacao = (prompt("Que ano voce gostaria de verificar?"));
+copa(anoDeVerificacao);
+
+
+</script>	

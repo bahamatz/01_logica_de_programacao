@@ -1,0 +1,30 @@
+<script>
+function pulaLinha(){ 					//inicio da funcao pulaLinha; esta funcao pula a linha
+	document.write("<br><hr>");
+	}									//final da funcao pulaLinha
+
+function mostra(frase){					//inicio da funcao mostra; esta funcao apresenta a frase com a tag big e pula a linha
+	document.write("<big>"+frase+"</big>");
+	pulaLinha();						//final da funcao mostra
+	}
+
+function calculaIMC(altura, peso){
+	var imc = peso / (altura^2);
+	return imc;
+	}
+	
+var peso =  90;
+var altura = 1.76;
+//var imc = peso / (altura^2);
+
+var pesoDoPrimo = 83;
+var alturaDoPrimo = 1.76;
+//var imcDoPrimo = pesoDoPrimo /(alturaDoPrimo^2);
+var imcDoPrimo = calculaIMC(alturaDoPrimo, pesoDoPrimo);
+mostra("o IMC DO MEU PRIMO EH "+ imcDoPrimo);
+mostra ("Ele ainda esta " + (imcDoPrimo -18.5)+ " pontos acima do limite de magreza");
+mostra("Ele ainda esta " + (35-imcDoPrimo)+ " pontos abaixo do nivel de obesidade severa");
+mostra("Meu imc eh " + Math.round(calculaIMC(alturaDoPrimo, pesoDoPrimo)));
+
+
+</script>

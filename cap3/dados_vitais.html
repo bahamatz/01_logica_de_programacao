@@ -1,0 +1,37 @@
+<script>
+
+function pulaLinha(){ 					//inicio da funcao pulaLinha; esta funcao pula a linha
+	document.write("<br><hr>");
+	}									//final da funcao pulaLinha
+
+function mostra(frase){					//inicio da funcao mostra; esta funcao apresenta a frase com a tag big e pula a linha
+	document.write("<big>"+frase+"</big>");
+	pulaLinha();						//final da funcao mostra
+	}
+
+function calculaDiasDeVida(idade){
+	var dias = idade *365;
+	return dias;
+	}	
+
+function calculaBatimentos(dias){
+	var batimentos = dias * 24 *60*80;
+	return batimentos;
+	}
+
+	
+var idade = prompt("quantos anos voce tem?");
+var dias = calculaDiasDeVida(idade);
+mostra(dias);
+mostra(calculaBatimentos(dias));
+mostra(calculaDiasDeVida(idade) + " " + calculaBatimentos(dias));
+/*
+	
+var idade = prompt("Quantos anos voce tem?");
+var dias = idade *365 ;
+var batimentos = dias * 24 * 60 * 80; 
+mostra("voce vja viveu " + dias + " dias de vida");
+mostra ("Seu coracao ja bateu "+ batimentos + " vezes ao longo da vida");
+
+*/
+</script>
