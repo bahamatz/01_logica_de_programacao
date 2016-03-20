@@ -1,0 +1,19 @@
+<script>
+
+function mostra(frase){
+	
+	document.write(frase + "<br><hr><br>");
+}
+
+function tabuada(numero){
+	var multiplicador = 1;
+	while (multiplicador <= 10){
+		mostra(numero + " * " + multiplicador + " = " + (multiplicador*numero));
+		multiplicador++;
+	}
+}
+
+tabuada(prompt("Favor digite o numero da tabuada!"));
+
+
+</script>
